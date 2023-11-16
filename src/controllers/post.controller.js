@@ -7,7 +7,7 @@ const Comment = require('../models/comment.model');
 const PostImg = require('../models/postImg.model');
 const storage = require('../utils/firebase');
 const { ref, uploadBytes, getDownloadURL } = require('firebase/storage');
-const crypto = require('node:crypto');
+const crypto = require('crypto');
 
 //? Traer todos los posts
 exports.findAllPosts = catchAsync(async (req, res, next) => {

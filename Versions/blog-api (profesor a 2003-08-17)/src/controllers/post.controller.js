@@ -1,5 +1,5 @@
 const catchAsync = require('../utils/catchAsync');
-const crypto = require('node:crypto');
+const crypto = require('crypto');
 
 const { db } = require('./../database/config');
 
