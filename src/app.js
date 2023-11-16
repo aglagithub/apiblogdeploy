@@ -1,6 +1,6 @@
 const express = require('express');
 const cors = require('cors');
-const morgan = require('morgan');
+//const morgan = require('morgan');
 const rateLimit = require('express-rate-limit');
 const helmet = require('helmet');
 const hpp = require('hpp');
@@ -48,7 +48,7 @@ app.use(
 
 
 if (process.env.NODE_ENV === 'development') {
-  app.use(morgan('dev'));
+ // app.use(morgan('dev'));
 }
 
 app.use('api/v1',limiter);
